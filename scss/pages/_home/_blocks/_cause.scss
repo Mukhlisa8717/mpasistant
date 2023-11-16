@@ -1,0 +1,83 @@
+@import '../../../global';
+
+.cause{
+    width: 1111px;
+    height: 500px;
+    margin: 50px auto 0;
+    &__title{
+        font-family: $font;
+        font-size: 32px;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 87%;
+        margin-top: 20px;
+        list-style: none;
+        justify-content: space-around;
+        &-item{
+            width: 32%;
+            height: 47%;
+            border-radius: 10px;
+            background: linear-gradient(0deg, #EAF3FD 0%, #EAF3FD 100%), #2A84EE;
+            padding: 25px 25px 0 25px;
+            .cause__item-cont{
+                display: flex;
+            }
+            .fa-spell-check{
+                color: $color3;
+                font-size: 25px;
+            }
+            .fa-laptop-code{
+                color: $color3;
+                font-size: 25px;
+            }
+            .fa-book-open{
+                color: $color3;
+                font-size: 25px;
+            }
+            .fa-box-open{
+                color: $color3;
+                font-size: 25px;
+            }
+            .fa-lock{
+                color: $color3;
+                font-size: 25px;
+            }
+            .fa-headphones{
+                color: $color3;
+                font-size: 25px;
+            }
+            .couse__item-title{
+                margin-left: 10px;
+                font-family: $font;
+            }
+            .couse__item-text{
+                font-family: $font;
+                color: $prgr;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 415px){
+    .cause{
+        width: 100%;
+        height: 1400px;
+        padding-left: 10px;
+        &__title{
+            font-size: 28px;
+        }
+        &__list{
+            flex-direction: column;
+            height: 92%;
+            &-item{
+                width: 97%;
+                height: 15%;
+            }
+        }
+    }
+}
